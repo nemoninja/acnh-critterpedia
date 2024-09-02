@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 import MonthsEnum from "../data/MonthsEnum.js";
 
 const cellEdge = "50px";
 
-export function Calendar() {
+export function Calendar({ setMonth }) {
+  const [activeMonth, setActiveMonth] = useState(null);
+
   const arrayM = Object.values(MonthsEnum());
   const numCols = arrayM.length;
   const numRows = arrayM.length / numCols;
+
+  const handleOnClick = (month) => {
+    setActiveMonth(month);
+    setMonth(month);
+  };
 
   return (
     <div id="calendar" style={{ padding: "20px" }}>
@@ -26,13 +33,13 @@ export function Calendar() {
       >
         {arrayM.map((month) => (
           <button
-            onClick={() => {}}
+            onClick={() => handleOnClick(month)}
             id={month}
             key={month}
             style={{
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "None",
+              backgroundColor: month === activeMonth ? "yellow" : "white",
               border: "solid 2px black",
               display: "flex",
               height: cellEdge,

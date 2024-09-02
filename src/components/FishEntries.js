@@ -6,16 +6,24 @@ import data from "../data/fish.json";
 
 const cellEdge = "80px";
 
-export function FishEntries({ location }) {
+export function FishEntries({ location, month }) {
   const allEntries = data.fish;
-  const entries = allEntries.filter((entry) =>
-    entry.locations.includes(location)
-  );
+
+  const entries = allEntries.filter((entry) => {
+    const matchLocation = entry.locations.includes(location);
+
+    let matchMonth = true;
+    if (month !== null) {
+      matchMonth = entry.n_months.includes(month);
+    }
+
+    return matchMonth && matchLocation;
+  });
 
   if (entries.length === 0) {
     return (
       <div id={`fish-entries-${location}`} key={`fish-entries-${location}`}>
-        No fishes available!
+        No fishes available in {month}!
       </div>
     );
   }
