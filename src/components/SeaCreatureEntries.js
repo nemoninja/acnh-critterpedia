@@ -1,24 +1,23 @@
 import React from "react";
 
 import { ImageFetcher } from "./ImageFetcher";
-import data from "../data/db_bugs.json";
+import data from "../data/db_sea_creatures.json";
 
 const cellEdge = "80px";
 
-export function BugEntries({ location, month }) {
-  const allEntries = data.bugs;
+export function SeaCreatureEntries({ month }) {
+  const allEntries = data.sea_creatures;
 
   const entries = allEntries.filter((entry) => {
-    const matchLocation = entry.locations.includes(location);
     const matchMonth = month === null ? true : entry.n_months.includes(month);
 
-    return matchMonth && matchLocation;
+    return matchMonth;
   });
 
   if (entries.length === 0) {
     return (
-      <div id={`bug-entries-${location}`} key={`bug-entries-${location}`}>
-        No bugs available in {month}!
+      <div id={"sea-creature-entries"} key={"sea-creature-entries"}>
+        No sea creatures available in {month}!
       </div>
     );
   }
@@ -28,16 +27,16 @@ export function BugEntries({ location, month }) {
 
   return (
     <div
-      id={`bug-entries-${location}`}
-      key={`bug-entries-${location}`}
+      id={"sea-creature-entries"}
+      key={"sea-creature-entries"}
       style={{
         paddingTop: "10px",
         paddingBottom: "20px",
       }}
     >
       <div
-        id={`bug-entries-grid-${location}`}
-        key={`bug-entries-grid-${location}`}
+        id={"sea-creature-entries-grid"}
+        key={"sea-creature-entries-grid"}
         style={{
           alignItems: "center",
           display: "grid",
@@ -51,14 +50,11 @@ export function BugEntries({ location, month }) {
       >
         {entries.map((entry) => {
           return (
-            <div
-              id={`${location}-${entry.name}-cell`}
-              key={`${location}-${entry.name}-cell`}
-            >
+            <div id={`${entry.name}-cell`} key={`${entry.name}-cell`}>
               <button
                 onClick={() => {}}
-                id={`${location}-${entry.name}-button`}
-                key={`${location}-${entry.name}-button`}
+                id={`${entry.name}-button`}
+                key={`${entry.name}-button`}
                 style={{
                   alignItems: "center",
                   backgroundColor: "None",
@@ -71,7 +67,7 @@ export function BugEntries({ location, month }) {
                 }}
               >
                 <ImageFetcher
-                  folderName="bugs"
+                  folderName="sea_creatures"
                   filename={entry.image}
                   iconEdge="50px"
                 />

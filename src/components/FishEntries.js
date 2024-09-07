@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ImageFetcher } from "./ImageFetcher";
-import data from "../data/fish.json";
+import data from "../data/db_fish.json";
 
 const cellEdge = "80px";
 

@@ -1,0 +1,818 @@
+{
+  "sea_creatures": [
+    {
+      "id": 1,
+      "name": "Seaweed",
+      "image": "seaweed.webp",
+      "price": 600,
+      "size": 4,
+      "movement_pattern": "Stationary",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sea grapes",
+      "image": "sea_grapes.webp",
+      "price": 900,
+      "size": 2,
+      "movement_pattern": "Stationary",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jun", "Jul", "Aug", "Sep"],
+      "s_months": ["Jan", "Feb", "Mar", "Dec"]
+    },
+    {
+      "id": 3,
+      "name": "Sea cucumber",
+      "image": "sea_cucumber.webp",
+      "price": 500,
+      "size": 3,
+      "movement_pattern": "Slow consistent movement",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jan", "Feb", "Mar", "Apr", "Nov", "Dec"],
+      "s_months": ["May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+    },
+    {
+      "id": 4,
+      "name": "Sea pig",
+      "image": "sea_pig.webp",
+      "price": 10000,
+      "size": 2,
+      "movement_pattern": "Quick long lunges",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Jan", "Feb", "Nov", "Dec"],
+      "s_months": ["May", "Jun", "Jul", "Aug"]
+    },
+    {
+      "id": 5,
+      "name": "Sea star",
+      "image": "sea_star.webp",
+      "price": 500,
+      "size": 2,
+      "movement_pattern": "Slow short lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sea urchin",
+      "image": "sea_urchin.webp",
+      "price": 1700,
+      "size": 2,
+      "movement_pattern": "Slow consistent movement",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "s_months": ["Jan", "Feb", "Mar", "Nov", "Dec"]
+    },
+    {
+      "id": 7,
+      "name": "Slate pencil urchin",
+      "image": "slate_pencil_urchin.webp",
+      "price": 2000,
+      "size": 3,
+      "movement_pattern": "Moderate consistent movement",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "s_months": ["Jan", "Feb", "Mar", "Nov", "Dec"]
+    },
+    {
+      "id": 8,
+      "name": "Sea anemone",
+      "image": "sea_anemone.webp",
+      "price": 500,
+      "size": 4,
+      "movement_pattern": "Stationary",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Moon jellyfish",
+      "image": "moon_jellyfish.webp",
+      "price": 600,
+      "size": 2,
+      "movement_pattern": "Slow consistent movement",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jul", "Aug", "Sep"],
+      "s_months": ["Jan", "Feb", "Mar"]
+    },
+    {
+      "id": 10,
+      "name": "Sea slug",
+      "image": "sea_slug.webp",
+      "price": 600,
+      "size": 1,
+      "movement_pattern": "Slow consistent movement",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Pearl oyster",
+      "image": "pearl_oyster.webp",
+      "price": 2800,
+      "size": 2,
+      "movement_pattern": "Moderate long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Mussel",
+      "image": "mussel.webp",
+      "price": 1500,
+      "size": 2,
+      "movement_pattern": "Slow consistent movement",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "s_months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Dec"]
+    },
+    {
+      "id": 13,
+      "name": "Oyster",
+      "image": "oyster.webp",
+      "price": 1100,
+      "size": 2,
+      "movement_pattern": "Moderate short lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jan", "Feb", "Sep", "Oct", "Nov", "Dec"],
+      "s_months": ["Mar", "Apr", "May", "Jun", "Jul", "Aug"]
+    },
+    {
+      "id": 14,
+      "name": "Scallop",
+      "image": "scallop.webp",
+      "price": 1200,
+      "size": 3,
+      "movement_pattern": "Slow long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Whelk",
+      "image": "whelk.webp",
+      "price": 1000,
+      "size": 2,
+      "movement_pattern": "Slow consistent movement",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Turban shell",
+      "image": "turban_shell.webp",
+      "price": 1000,
+      "size": 2,
+      "movement_pattern": "Slow",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Mar", "Apr", "May", "Sep", "Oct", "Nov", "Dec"],
+      "s_months": ["Mar", "Apr", "May", "Jun", "Sep", "Oct", "Nov"]
+    },
+    {
+      "id": 17,
+      "name": "Abalone",
+      "image": "abalone.webp",
+      "price": 2000,
+      "size": 3,
+      "movement_pattern": "Moderate consistent movement",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Jan", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "s_months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Dec"]
+    },
+    {
+      "id": 18,
+      "name": "Gigas giant clam",
+      "image": "gigas_giant_clam.webp",
+      "price": 15000,
+      "size": 5,
+      "movement_pattern": "Quick long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["May", "Jun", "Jul", "Aug", "Sep"],
+      "s_months": ["Jan", "Feb", "Mar", "Nov", "Dec"]
+    },
+    {
+      "id": 19,
+      "name": "Chambered nautilus",
+      "image": "chambered_nautilus.webp",
+      "price": 1800,
+      "size": 3,
+      "movement_pattern": "Slow",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Mar", "Apr", "May", "Jun", "Sep", "Oct", "Nov"],
+      "s_months": ["Mar", "Apr", "May", "Sep", "Oct", "Nov", "Dec"]
+    },
+    {
+      "id": 20,
+      "name": "Octopus",
+      "image": "octopus.webp",
+      "price": 1200,
+      "size": 3,
+      "movement_pattern": "Moderate long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Umbrella octopus",
+      "image": "umbrella_octopus.webp",
+      "price": 6000,
+      "size": 2,
+      "movement_pattern": "Quick long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Mar", "Apr", "May", "Sep", "Oct", "Nov"],
+      "s_months": ["Mar", "Apr", "May", "Sep", "Oct", "Nov"]
+    },
+    {
+      "id": 22,
+      "name": "Vampire squid",
+      "image": "vampire_squid.webp",
+      "price": 10000,
+      "size": 3,
+      "movement_pattern": "Quick long lunges",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["May", "Jun", "Jul", "Aug"],
+      "s_months": ["Jan", "Feb", "Nov", "Dec"]
+    },
+    {
+      "id": 23,
+      "name": "Firefly squid",
+      "image": "firefly_squid.webp",
+      "price": 1400,
+      "size": 1,
+      "movement_pattern": "Slow",
+      "time": [0, 1, 2, 3, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Mar", "Apr", "May", "Jun"],
+      "s_months": ["Sep", "Oct", "Nov", "Dec"]
+    },
+    {
+      "id": 24,
+      "name": "Gazami crab",
+      "image": "gazami_crab.webp",
+      "price": 2200,
+      "size": 3,
+      "movement_pattern": "Moderate long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov"],
+      "s_months": ["Jan", "Feb", "Mar", "Apr", "May", "Dec"]
+    },
+    {
+      "id": 25,
+      "name": "Dungeness crab",
+      "image": "dungeness_crab.webp",
+      "price": 1900,
+      "size": 3,
+      "movement_pattern": "Moderate consistent movement",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jan", "Feb", "Mar", "Apr", "May", "Nov", "Dec"],
+      "s_months": ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
+    },
+    {
+      "id": 26,
+      "name": "Snow crab",
+      "image": "snow_crab.webp",
+      "price": 6000,
+      "size": 4,
+      "movement_pattern": "Quick short lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jan", "Feb", "Mar", "Apr", "Nov", "Dec"],
+      "s_months": ["May", "Jun", "Jul", "Aug", "Sep", "Oct"]
+    },
+    {
+      "id": 27,
+      "name": "Red king crab",
+      "image": "red_king_crab.webp",
+      "price": 8000,
+      "size": 4,
+      "movement_pattern": "Quick",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jan", "Feb", "Mar", "Nov", "Dec"],
+      "s_months": ["May", "Jun", "Jul", "Aug", "Sep"]
+    },
+    {
+      "id": 28,
+      "name": "Acorn barnacle",
+      "image": "acorn_barnacle.webp",
+      "price": 600,
+      "size": 1,
+      "movement_pattern": "Stationary",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Spider crab",
+      "image": "spider_crab.webp",
+      "price": 12000,
+      "size": 5,
+      "movement_pattern": "Quick",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Mar", "Apr"],
+      "s_months": ["Sep", "Oct"]
+    },
+    {
+      "id": 30,
+      "name": "Tiger prawn",
+      "image": "tiger_prawn.webp",
+      "price": 3000,
+      "size": 2,
+      "movement_pattern": "Moderate consistent movement",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Jun", "Jul", "Aug", "Sep"],
+      "s_months": ["Jan", "Feb", "Mar", "Dec"]
+    },
+    {
+      "id": 31,
+      "name": "Sweet shrimp",
+      "image": "sweet_shrimp.webp",
+      "price": 1400,
+      "size": 2,
+      "movement_pattern": "Slow",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Jan", "Feb", "Sep", "Oct", "Nov", "Dec"],
+      "s_months": ["Mar", "Apr", "May", "Jun", "Jul", "Aug"]
+    },
+    {
+      "id": 32,
+      "name": "Mantis shrimp",
+      "image": "mantis_shrimp.webp",
+      "price": 2500,
+      "size": 2,
+      "movement_pattern": "Quick short lunges",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ],
+      "s_months": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Spiny lobster",
+      "image": "spiny_lobster.webp",
+      "price": 5000,
+      "size": 4,
+      "movement_pattern": "Fast",
+      "time": [0, 1, 2, 3, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Oct", "Nov", "Dec"],
+      "s_months": ["Apr", "May", "Jun"]
+    },
+    {
+      "id": 34,
+      "name": "Lobster",
+      "image": "lobster.webp",
+      "price": 4500,
+      "size": 4,
+      "movement_pattern": "Quick",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jan", "Apr", "May", "Jun", "Dec"],
+      "s_months": ["Jun", "Jul", "Oct", "Nov", "Dec"]
+    },
+    {
+      "id": 35,
+      "name": "Giant isopod",
+      "image": "giant_isopod.webp",
+      "price": 12000,
+      "size": 3,
+      "movement_pattern": "Quick long lunges",
+      "time": [0, 1, 2, 3, 9, 10, 11, 12, 13, 14, 15, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Jul", "Aug", "Sep", "Oct"],
+      "s_months": ["Jan", "Feb", "Mar", "Apr"]
+    },
+    {
+      "id": 36,
+      "name": "Horseshoe crab",
+      "image": "horseshoe_crab.webp",
+      "price": 2500,
+      "size": 3,
+      "movement_pattern": "Quick short lunges",
+      "time": [0, 1, 2, 3, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Jul", "Aug", "Sep"],
+      "s_months": ["Jan", "Feb", "Mar"]
+    },
+    {
+      "id": 37,
+      "name": "Sea pineapple",
+      "image": "sea_pineapple.webp",
+      "price": 1500,
+      "size": 2,
+      "movement_pattern": "Slow long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Apr", "May", "Jun", "Jul", "Aug"],
+      "s_months": ["Jan", "Feb", "Oct", "Nov", "Dec"]
+    },
+    {
+      "id": 38,
+      "name": "Spotted garden eel",
+      "image": "spotted_garden_eel.webp",
+      "price": 1100,
+      "size": 2,
+      "movement_pattern": "Slow consistent movement",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+      "s_months": ["Jan", "Feb", "Mar", "Apr", "Nov", "Dec"]
+    },
+    {
+      "id": 39,
+      "name": "Flatworm",
+      "image": "flatworm.webp",
+      "price": 700,
+      "size": 1,
+      "movement_pattern": "Slow short movement",
+      "time": [0, 1, 2, 3, 4, 5, 6, 7, 8, 16, 17, 18, 19, 20, 21, 22, 23],
+      "all_day": false,
+      "n_months": ["Aug", "Sep"],
+      "s_months": ["Feb", "Mar"]
+    },
+    {
+      "id": 40,
+      "name": "Venus' flower basket",
+      "image": "venus_flower_basket.webp",
+      "price": 5000,
+      "size": 3,
+      "movement_pattern": "Quick long lunges",
+      "time": [
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,
+        20, 21, 22, 23
+      ],
+      "all_day": true,
+      "n_months": ["Jan", "Feb", "Oct", "Nov", "Dec"],
+      "s_months": ["Apr", "May", "Jun", "Jul", "Aug"]
+    }
+  ]
+}

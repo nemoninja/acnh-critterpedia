@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { BugPage } from "../components/BugPage";
 import { FishPage } from "../components/FishPage";
+import { SeaCreaturePage } from "../components/SeaCreaturePage";
 
 const IndexPage = () => (
   <main>
@@ -9,6 +10,7 @@ const IndexPage = () => (
     <p>A simple wildlife availability checker for ACNH.</p>
     <div>{BugPage()}</div>
     <div>{FishPage()}</div>
+    <div>{SeaCreaturePage()}</div>
   </main>
 );
 

@@ -1,4 +1,4 @@
-const FishSizesEnum = () =>
+const SeaCreatureSizesEnum = () =>
   Object.freeze({
     1: "Tiny",
     2: "Small",
@@ -9,4 +9,4 @@ const FishSizesEnum = () =>
     7: "Long & thin",
   });
 
-export default FishSizesEnum;
+export default SeaCreatureSizesEnum;
