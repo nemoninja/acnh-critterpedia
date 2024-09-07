@@ -1,7 +1,7 @@
 import React from "react";
 
-import { CreatureCell } from "./CreatureCell";
 import data from "../data/db_bugs.json";
+import { CreatureCell } from "./CreatureCell";
 
 export function BugEntries({ location, month }) {
   const allEntries = data.bugs;
