@@ -1,0 +1,19 @@
+.calendar-grid {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  width: 50px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.calendar-cell {
+  align-items: center;
+  justify-content: center;
+  border: solid 2px black;
+  display: flex;
+  height: 50px;
+  margin: -2px;
+  width: 50px;
+  /* background-color will be set dynamically */
+}
