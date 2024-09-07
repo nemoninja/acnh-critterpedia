@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 
 import { Calendar } from "./Calendar.js";
-import { FishEntries } from "./FishEntries.js";
+import { BugEntries } from "./BugEntries.js";
 
-import FishLocationsEnum from "../data/FishLocationsEnum.js";
+import BugLocationsEnum from "../data/BugLocationsEnum.js";
 
-export function FishPage() {
+export function BugPage() {
   const [month, setMonth] = useState(null);
 
-  const arrLocations = Object.values(FishLocationsEnum());
+  const arrLocations = Object.values(BugLocationsEnum());
 
   return (
-    <div id="fish-page" key="fish-page" style={{ padding: "20px" }}>
+    <div id="bug-page" key="bug-page" style={{ padding: "20px" }}>
       <Calendar setMonth={setMonth} />
 
       {arrLocations.map((location) => (
         <div id={`${location}-section`} key={`${location}-section`}>
           <h2 style={{ alignText: "center", width: "100%" }}>{location}</h2>
-          <FishEntries location={location} month={month} />
+          <BugEntries location={location} month={month} />
         </div>
       ))}
     </div>

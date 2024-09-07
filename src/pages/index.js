@@ -1,11 +1,13 @@
 import * as React from "react";
 
+import { BugPage } from "../components/BugPage";
 import { FishPage } from "../components/FishPage";
 
 const IndexPage = () => (
   <main>
     <h1>nemoninja's ACNH Critterpedia</h1>
     <p>A simple wildlife availability checker for ACNH.</p>
+    <div>{BugPage()}</div>
     <div>{FishPage()}</div>
   </main>
 );

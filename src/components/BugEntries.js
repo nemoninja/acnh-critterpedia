@@ -1,12 +1,12 @@
 import React from "react";
 
 import { ImageFetcher } from "./ImageFetcher";
-import data from "../data/fish.json";
+import data from "../data/bugs.json";
 
 const cellEdge = "80px";
 
-export function FishEntries({ location, month }) {
-  const allEntries = data.fish;
+export function BugEntries({ location, month }) {
+  const allEntries = data.bugs;
 
   const entries = allEntries.filter((entry) => {
     const matchLocation = entry.locations.includes(location);
@@ -17,8 +17,8 @@ export function FishEntries({ location, month }) {
 
   if (entries.length === 0) {
     return (
-      <div id={`fish-entries-${location}`} key={`fish-entries-${location}`}>
-        No fishes available in {month}!
+      <div id={`bug-entries-${location}`} key={`bug-entries-${location}`}>
+        No buges available in {month}!
       </div>
     );
   }
@@ -28,16 +28,16 @@ export function FishEntries({ location, month }) {
 
   return (
     <div
-      id={`fish-entries-${location}`}
-      key={`fish-entries-${location}`}
+      id={`bug-entries-${location}`}
+      key={`bug-entries-${location}`}
       style={{
         paddingTop: "10px",
         paddingBottom: "20px",
       }}
     >
       <div
-        id={`fish-entries-grid-${location}`}
-        key={`fish-entries-grid-${location}`}
+        id={`bug-entries-grid-${location}`}
+        key={`bug-entries-grid-${location}`}
         style={{
           alignItems: "center",
           display: "grid",
@@ -71,7 +71,7 @@ export function FishEntries({ location, month }) {
                 }}
               >
                 <ImageFetcher
-                  folderName="fish"
+                  folderName="bugs"
                   filename={entry.image}
                   iconEdge="50px"
                 />
