@@ -3,7 +3,7 @@ import React from "react";
 import { ImageFetcher } from "./ImageFetcher";
 import data from "../data/db_bugs.json";
 
-const cellEdge = "80px";
+const cellEdge = "70px";
 
 export function BugEntries({ location, month }) {
   const allEntries = data.bugs;

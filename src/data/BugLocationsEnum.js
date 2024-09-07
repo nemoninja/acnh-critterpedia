@@ -20,7 +20,7 @@ const BugLocationsEnum = () =>
     ShakingTrees: "Shaking trees",
     UnderTreesAsLeafs: "Under trees (as leafs)",
     Underground: "Underground",
-    VillagersHeads: "Villager's heads",
+    VillagersHeads: "Villagers' heads",
   });
 
 export default BugLocationsEnum;

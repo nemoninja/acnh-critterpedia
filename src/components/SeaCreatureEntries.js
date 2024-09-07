@@ -3,7 +3,7 @@ import React from "react";
 import { ImageFetcher } from "./ImageFetcher";
 import data from "../data/db_sea_creatures.json";
 
-const cellEdge = "80px";
+const cellEdge = "70px";
 
 export function SeaCreatureEntries({ month }) {
   const allEntries = data.sea_creatures;
