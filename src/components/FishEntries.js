@@ -1,9 +1,8 @@
 import React from "react";
-
-import { ImageFetcher } from "./ImageFetcher";
+import "./styles.css";
 import data from "../data/db_fish.json";
 
-const cellEdge = "70px";
+import { CreatureCell } from "./CreatureCell";
 
 export function FishEntries({ location, month }) {
   const allEntries = data.fish;
@@ -23,63 +22,23 @@ export function FishEntries({ location, month }) {
     );
   }
 
-  const numCols = 10;
-  const numRows = entries.length / numCols;
-
   return (
     <div
-      id={`fish-entries-${location}`}
-      key={`fish-entries-${location}`}
-      style={{
-        paddingTop: "10px",
-        paddingBottom: "20px",
-      }}
+      id={`fish-entries-grid-${location}`}
+      key={`fish-entries-grid-${location}`}
+      className="creature-grid"
+      num-entries={entries.length}
     >
-      <div
-        id={`fish-entries-grid-${location}`}
-        key={`fish-entries-grid-${location}`}
-        style={{
-          alignItems: "center",
-          display: "grid",
-          gridGap: 2,
-          gridTemplateColumns: `repeat(${numCols}, 1fr)`,
-          gridTemplateRows: `repeat(${numRows}, 1fr)`,
-          justifyContent: "center",
-          margin: "auto",
-          width: cellEdge,
-        }}
-      >
-        {entries.map((entry) => {
-          return (
-            <div
-              id={`${location}-${entry.name}-cell`}
-              key={`${location}-${entry.name}-cell`}
-            >
-              <button
-                onClick={() => {}}
-                id={`${location}-${entry.name}-button`}
-                key={`${location}-${entry.name}-button`}
-                style={{
-                  alignItems: "center",
-                  backgroundColor: "None",
-                  border: "solid 2px black",
-                  display: "flex",
-                  height: cellEdge,
-                  justifyContent: "center",
-                  margin: -2,
-                  width: cellEdge,
-                }}
-              >
-                <ImageFetcher
-                  folderName="fish"
-                  filename={entry.image}
-                  iconEdge="50px"
-                />
-              </button>
-            </div>
-          );
-        })}
-      </div>
+      {entries.map((entry) => {
+        return (
+          <CreatureCell
+            location={location}
+            entryName={entry.name}
+            assetName={entry.image}
+            assetFolder="fish"
+          />
+        );
+      })}
     </div>
   );
 }

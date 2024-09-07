@@ -1,9 +1,7 @@
 import React from "react";
 
-import { ImageFetcher } from "./ImageFetcher";
+import { CreatureCell } from "./CreatureCell";
 import data from "../data/db_bugs.json";
-
-const cellEdge = "70px";
 
 export function BugEntries({ location, month }) {
   const allEntries = data.bugs;
@@ -23,63 +21,23 @@ export function BugEntries({ location, month }) {
     );
   }
 
-  const numCols = 10;
-  const numRows = entries.length / numCols;
-
   return (
     <div
-      id={`bug-entries-${location}`}
-      key={`bug-entries-${location}`}
-      style={{
-        paddingTop: "10px",
-        paddingBottom: "20px",
-      }}
+      id={`bug-entries-grid-${location}`}
+      key={`bug-entries-grid-${location}`}
+      className="creature-grid"
+      num-entries={entries.length}
     >
-      <div
-        id={`bug-entries-grid-${location}`}
-        key={`bug-entries-grid-${location}`}
-        style={{
-          alignItems: "center",
-          display: "grid",
-          gridGap: 2,
-          gridTemplateColumns: `repeat(${numCols}, 1fr)`,
-          gridTemplateRows: `repeat(${numRows}, 1fr)`,
-          justifyContent: "center",
-          margin: "auto",
-          width: cellEdge,
-        }}
-      >
-        {entries.map((entry) => {
-          return (
-            <div
-              id={`${location}-${entry.name}-cell`}
-              key={`${location}-${entry.name}-cell`}
-            >
-              <button
-                onClick={() => {}}
-                id={`${location}-${entry.name}-button`}
-                key={`${location}-${entry.name}-button`}
-                style={{
-                  alignItems: "center",
-                  backgroundColor: "None",
-                  border: "solid 2px black",
-                  display: "flex",
-                  height: cellEdge,
-                  justifyContent: "center",
-                  margin: -2,
-                  width: cellEdge,
-                }}
-              >
-                <ImageFetcher
-                  folderName="bugs"
-                  filename={entry.image}
-                  iconEdge="50px"
-                />
-              </button>
-            </div>
-          );
-        })}
-      </div>
+      {entries.map((entry) => {
+        return (
+          <CreatureCell
+            location={location}
+            entryName={entry.name}
+            assetName={entry.image}
+            assetFolder="bugs"
+          />
+        );
+      })}
     </div>
   );
 }
