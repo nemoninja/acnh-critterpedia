@@ -9,7 +9,7 @@ export function BugEntries({ location, month }) {
   const allEntries = data.bugs;
 
   const entries = allEntries.filter((entry) => {
-    const matchLocation = entry.locations.includes(location);
+    const matchLocation = entry.location === location;
     const matchMonth = month === null ? true : entry.n_months.includes(month);
 
     return matchMonth && matchLocation;
