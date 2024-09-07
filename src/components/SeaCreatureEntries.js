@@ -8,11 +8,13 @@ import { NoEntriesFound } from "./NoEntriesFound";
 export function SeaCreatureEntries({ month }) {
   const allEntries = data.sea_creatures;
 
-  const entries = allEntries.filter((entry) => {
-    const matchMonth = month === null ? true : entry.n_months.includes(month);
+  const entries = allEntries
+    .filter((entry) => {
+      const matchMonth = month === null ? true : entry.n_months.includes(month);
 
-    return matchMonth;
-  });
+      return matchMonth;
+    })
+    .sort((a, b) => a.size - b.size);
 
   if (entries.length === 0) {
     return <NoEntriesFound label={"sea creatures"} location={"default"} />;
@@ -31,6 +33,7 @@ export function SeaCreatureEntries({ month }) {
             entryName={entry.name}
             assetName={entry.image}
             assetFolder="sea_creatures"
+            size={entry.size}
           />
         );
       })}
