@@ -12,8 +12,9 @@ export function Calendar({ setMonth }) {
   const numRows = arrayM.length / numCols;
 
   const handleOnClick = (month) => {
-    setActiveMonth(month);
-    setMonth(month);
+    const newMonth = month === activeMonth ? null : month;
+    setActiveMonth(newMonth);
+    setMonth(newMonth);
   };
 
   return (
