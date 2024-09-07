@@ -3,6 +3,7 @@ import "./entryStyles.css";
 import data from "../data/db_bugs.json";
 
 import { CreatureCell } from "./CreatureCell";
+import { NoEntriesFound } from "./NoEntriesFound";
 
 export function BugEntries({ location, month }) {
   const allEntries = data.bugs;
@@ -15,16 +16,11 @@ export function BugEntries({ location, month }) {
   });
 
   if (entries.length === 0) {
-    return (
-      <div id={`bug-entries-${location}`} key={`bug-entries-${location}`}>
-        No bugs available in {month}!
-      </div>
-    );
+    return <NoEntriesFound label={"bugs"} location={location} />;
   }
 
   return (
     <div
-      id={`bug-entries-grid-${location}`}
       key={`bug-entries-grid-${location}`}
       className="creature-grid"
       num-entries={entries.length}

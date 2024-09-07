@@ -14,22 +14,19 @@ export function Calendar({ setMonth }) {
   };
 
   return (
-    <div id="calendar" style={{ padding: "20px" }}>
-      <div id="calendar-grid" key="calendar-grid" className="calendar-grid">
-        {allMonths.map((month) => (
-          <button
-            onClick={() => handleOnClick(month)}
-            id={month}
-            key={month}
-            className="calendar-cell"
-            style={{
-              backgroundColor: month === activeMonth ? "yellow" : "white",
-            }}
-          >
-            {month}
-          </button>
-        ))}
-      </div>
+    <div className="calendar-grid">
+      {allMonths.map((month) => (
+        <button
+          onClick={() => handleOnClick(month)}
+          key={`calendar-cell-${month}`}
+          className="calendar-cell"
+          style={{
+            backgroundColor: month === activeMonth ? "yellow" : "white",
+          }}
+        >
+          {month}
+        </button>
+      ))}
     </div>
   );
 }

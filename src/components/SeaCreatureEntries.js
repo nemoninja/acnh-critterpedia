@@ -3,6 +3,7 @@ import "./entryStyles.css";
 import data from "../data/db_sea_creatures.json";
 
 import { CreatureCell } from "./CreatureCell";
+import { NoEntriesFound } from "./NoEntriesFound";
 
 export function SeaCreatureEntries({ month }) {
   const allEntries = data.sea_creatures;
@@ -14,16 +15,11 @@ export function SeaCreatureEntries({ month }) {
   });
 
   if (entries.length === 0) {
-    return (
-      <div id={"sea-creature-entries"} key={"sea-creature-entries"}>
-        No sea creatures available in {month}!
-      </div>
-    );
+    return <NoEntriesFound label={"sea creatures"} location={"default"} />;
   }
 
   return (
     <div
-      id={"sea-creature-entries-grid"}
       key={"sea-creature-entries-grid"}
       className="creature-grid"
       num-entries={entries.length}

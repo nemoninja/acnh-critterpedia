@@ -3,6 +3,7 @@ import "./entryStyles.css";
 import data from "../data/db_fish.json";
 
 import { CreatureCell } from "./CreatureCell";
+import { NoEntriesFound } from "./NoEntriesFound";
 
 export function FishEntries({ location, month }) {
   const allEntries = data.fish;
@@ -15,16 +16,11 @@ export function FishEntries({ location, month }) {
   });
 
   if (entries.length === 0) {
-    return (
-      <div id={`fish-entries-${location}`} key={`fish-entries-${location}`}>
-        No fishes available in {month}!
-      </div>
-    );
+    return <NoEntriesFound label={"fishes"} location={location} />;
   }
 
   return (
     <div
-      id={`fish-entries-grid-${location}`}
       key={`fish-entries-grid-${location}`}
       className="creature-grid"
       num-entries={entries.length}

@@ -5,11 +5,7 @@ import { ImageFetcher } from "./ImageFetcher";
 
 export function CreatureCell({ location, entryName, assetName, assetFolder }) {
   return (
-    <div
-      id={`${location}-${entryName}-cell`}
-      key={`${location}-${entryName}-cell`}
-      className="creature-cell"
-    >
+    <div key={`${location}-${entryName}-cell`} className="creature-cell">
       <ImageFetcher
         folderName={assetFolder}
         filename={assetName}
