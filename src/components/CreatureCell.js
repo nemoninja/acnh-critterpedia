@@ -1,4 +1,5 @@
 import React from "react";
+import "./entryStyles.css";
 
 import { ImageFetcher } from "./ImageFetcher";
 

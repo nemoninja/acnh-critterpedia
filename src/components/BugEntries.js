@@ -1,6 +1,7 @@
 import React from "react";
-
+import "./entryStyles.css";
 import data from "../data/db_bugs.json";
+
 import { CreatureCell } from "./CreatureCell";
 
 export function BugEntries({ location, month }) {

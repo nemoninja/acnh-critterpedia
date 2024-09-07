@@ -1,4 +1,5 @@
 import React from "react";
+import "./entryStyles.css";
 import data from "../data/db_fish.json";
 
 import { CreatureCell } from "./CreatureCell";

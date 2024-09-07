@@ -1,6 +1,7 @@
 import React from "react";
-
+import "./entryStyles.css";
 import data from "../data/db_sea_creatures.json";
+
 import { CreatureCell } from "./CreatureCell";
 
 export function SeaCreatureEntries({ month }) {
